@@ -4,229 +4,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Forward Always LLC - Strategic Management and Consulting Services.">
-    <title>Forward Always LLC | Home</title>
+    <title>Forward Always LLC - Corporate Home</title>
     <style>
-        /* Estilo Limpo e Corporativo (High Trust) */
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        /* RESET E FONTE */
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f8;
             color: #333;
             line-height: 1.6;
         }
 
+        /* HEADER SIMPLES */
         header {
-            background-color: #0f172a;
-            color: #fff;
-            padding: 20px 0;
+            background-color: #ffffff;
+            padding: 20px;
+            border-bottom: 3px solid #0056b3;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
 
+        h1 {
+            font-size: 1.8rem;
+            color: #0056b3;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* CONTAINER PRINCIPAL */
         .container {
-            width: 85%;
-            max-width: 1100px;
-            margin: 0 auto;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
-        .nav-flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 0.9rem;
-        }
-
-        /* Hero Section */
-        .hero {
-            background-color: #f3f4f6;
-            padding: 100px 0;
+        /* CARTÃO DE DADOS (O MAIS IMPORTANTE) */
+        .verification-card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid #d1d5db;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
-        .hero h1 {
-            font-size: 2.5rem;
-            color: #0f172a;
+        .verification-card h2 {
             margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            color: #64748b;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Content Sections */
-        .section {
-            padding: 60px 0;
-        }
-
-        .section h2 {
-            color: #0f172a;
-            border-bottom: 2px solid #e2e8f0;
+            font-size: 1.4rem;
+            color: #444;
+            border-bottom: 1px solid #eee;
             padding-bottom: 10px;
-            display: inline-block;
         }
 
-        /* Footer - A PARTE MAIS IMPORTANTE PARA A META */
-        footer {
-            background-color: #0f172a;
-            color: #94a3b8;
-            padding: 40px 0;
-            font-size: 0.9rem;
-            border-top: 5px solid #3b82f6;
-        }
-
-        .footer-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .footer-col {
-            flex: 1;
-            min-width: 250px;
-            margin-bottom: 20px;
-        }
-
-        .footer-col h3 {
-            color: #fff;
+        /* ESTILO DOS DADOS SENSÍVEIS */
+        .data-row {
             margin-bottom: 15px;
+            font-size: 1.1rem;
         }
 
-        .footer-col p {
-            margin: 5px 0;
+        .data-label {
+            font-weight: bold;
+            color: #555;
+            display: block;
+            font-size: 0.9rem;
+            text-transform: uppercase;
         }
 
-        .footer-col a {
-            color: #3b82f6;
+        .data-value {
+            color: #000;
+            font-weight: normal;
+            font-size: 1.2rem;
+        }
+
+        /* BOTÃO DE PRIVACIDADE */
+        .btn-privacy {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: #0056b3;
+            color: white;
+            padding: 15px 30px;
             text-decoration: none;
-        }
-
-        .legal-address {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 15px;
             border-radius: 5px;
-            border: 1px solid #334155;
+            font-weight: bold;
+            transition: background 0.3s;
         }
 
-        /* Responsividade */
-        @media (max-width: 768px) {
+        .btn-privacy:hover {
+            background-color: #004494;
+        }
 
-            .nav-flex,
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav {
-                margin-top: 20px;
-            }
-
-            nav a {
-                margin: 0 10px;
-            }
-
-            .legal-address {
-                margin-top: 20px;
-            }
+        /* RODAPÉ SIMPLES */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #888;
+            font-size: 0.8rem;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Cabeçalho -->
     <header>
-        <div class="container nav-flex">
-            <div class="logo">FORWARD ALWAYS LLC</div>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
+        <h1>Forward Always LLC</h1>
     </header>
 
-    <!-- Hero / Banner Principal -->
-    <section class="hero">
-        <div class="container">
-            <h1>Strategic Solutions for a Moving World</h1>
-            <p>We provide professional management and consulting services tailored to help your business move forward,
-                always.</p>
+    <div class="container">
+
+        <!-- INTRODUÇÃO -->
+        <div style="text-align: center; margin-bottom: 30px;">
+            <p>Welcome to our official corporate portal. <br>We provide strategic management and consulting services.
+            </p>
         </div>
-    </section>
 
-    <!-- Sobre -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Forward Always LLC is a premier management company focused on operational efficiency and strategic
-                growth. Founded in New Mexico, we operate with a global mindset, serving clients with integrity and
-                precision.</p>
-            <p>Our mission is to simplify complex business challenges through dedicated leadership and innovative
-                strategies.</p>
-        </div>
-    </section>
+        <!-- O CARTÃO QUE O AGENTE DA META VAI OLHAR -->
+        <div class="verification-card">
+            <h2>Corporate Contact Information</h2>
 
-    <!-- Serviços (Genérico para servir qualquer nicho) -->
-    <section id="services" class="section" style="background-color: #fafafa;">
-        <div class="container">
-            <h2>Our Services</h2>
-            <ul>
-                <li><strong>Business Strategy:</strong> Comprehensive planning for market entry and expansion.</li>
-                <li><strong>Operational Management:</strong> Streamlining processes to maximize productivity.</li>
-                <li><strong>Digital Transformation:</strong> Integrating modern technology into traditional business
-                    models.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- RODAPÉ - AQUI ACONTECE A MÁGICA DA VERIFICAÇÃO -->
-    <footer id="contact">
-        <div class="container footer-content">
-
-            <div class="footer-col">
-                <h3>Contact Us</h3>
-                <p>Have questions? Reach out to our team.</p>
-                <!-- O Email deve ser o corporativo -->
-                <p>Email: <a href="mailto:admin@forwardalways.com">admin@forwardalways.com</a></p>
-                <br>
-                <!-- Link Obrigatório para Compliance -->
-                <p><a href="privacy.html">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <div class="data-row">
+                <span class="data-label">Legal Entity Name:</span>
+                <span class="data-value">Forward Always LLC</span>
             </div>
 
-            <div class="footer-col">
-                <h3>Corporate Headquarters</h3>
-                <!-- DADOS EXATOS DO PDF (ARTICLES OF ORGANIZATION) -->
-                <!-- A Meta fará o 'Match' visual destes dados com o seu documento -->
-                <div class="legal-address">
-                    <p><strong>Forward Always LLC</strong></p>
-                    <p>1209 MOUNTAIN ROAD PL NE, STE H</p>
-                    <p>Albuquerque, NM 87110</p>
-                    <p>United States</p>
-                    <!-- Coloque seu número VoIP aqui -->
-                    <p>Phone: [SEU TELEFONE VOIP AQUI]</p>
-                </div>
+            <div class="data-row">
+                <span class="data-label">Registered Address:</span>
+                <span class="data-value">1209 MOUNTAIN ROAD PL NE, STE H<br>Albuquerque, NM 87110<br>United
+                    States</span>
             </div>
 
+            <div class="data-row">
+                <span class="data-label">Contact Email:</span>
+                <span class="data-value">admin@forwardalways.com</span>
+            </div>
+
+            <div class="data-row">
+                <span class="data-label">Support Phone:</span>
+                <!-- SUBSTITUA PELO SEU NÚMERO VOIP -->
+                <span class="data-value">+1 (505) 555-0199</span>
+            </div>
+
+            <!-- BOTÃO DE PRIVACIDADE GRANDE -->
+            <a href="privacy.html" class="btn-privacy">Privacy Policy</a>
         </div>
-        <div class="container"
-            style="text-align: center; margin-top: 30px; border-top: 1px solid #1e293b; padding-top: 20px;">
-            <p>&copy; 2024 Forward Always LLC. All rights reserved.</p>
-        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2024 Forward Always LLC. All Rights Reserved.
     </footer>
 
 </body>
